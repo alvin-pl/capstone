@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 </head>
 <body>
     <div class="h1">
@@ -15,12 +17,16 @@
     <div>
         <form>
             Enter location of zip code below<br>
-            <input type="text" name="location" value="address and zip code">
+            <input class="textfield" type="text" name="location" value="address and zip code">
             <input type="submit" value="Submit">
         </form>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <div style="width: 640px; height: 480px" id="mapContainer"></div>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+   <script src="script.js"></script>
 </body>
 </html>

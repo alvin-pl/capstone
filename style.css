@@ -1,0 +1,14 @@
+div{
+    display: flex;
+    justify-content: center;
+}
+
+.textfield{
+    height: 40px;
+    width: 200px;
+    border: 2px solid black;
+}
+
+#mapContainer{
+    border: 1px solid black;
+}
