@@ -3,30 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
     <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
     <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
     <script src="https://js.api.here.com/v3/3.1/mapsjs-ui.js" type="text/javascript" charset="utf-8"></script>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDI_pp8KgR-Dd6NA08tUStdd0xksdfS6vU&libraries=places"></script> 
+    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDI_pp8KgR-Dd6NA08tUStdd0xksdfS6vU&libraries=places&callback=initMap">  -->
+    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
     <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
 </head>
 <body>
-    <div class="h1">
+    <div class="div1">
         <h1>Search for artwork here!</h1>
     </div>
 
-    <div>
-        <form>
-            Enter address<br>
+    <div class="div2">
+        <form class="inputForm">
             <input class="textfield" type="text" name="location" value="">
-            <input type="submit" value="submit">
+            <input type="submit" value="submit" class="subInput">
         </form>
     </div>
 
-    <div style="width: 640px; height: 480px" id="mapContainer"></div>
-
-
+    <main role="main">
+        <nav id="mapContainer"></nav>
+        <p id="nearbyResults"> nearby results here! :D</p>
+    </main>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="script.js"></script>
